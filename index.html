@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Geobuscador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  
+    
+<div class="encabezado">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="static/icons/logo.png" alt="Logo" width="50" height="50" class="logo img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="datasets.html">Datasets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#Modal_descarga">Kit de Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="acercade.html">Acerca de</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container patron">
+    <form id="searchForm">
+        <div class="form-group">
+            <label class="info-texto" for="keyword"> <h3>Geobuscador:</h3> </label>
+            
+            <input type="text" class="form-control" id="keyword" placeholder="Carta Topográfica, Cuencas, Mamíferos, Geofísica">
+        </div>
+    </form>
+    <div id="results" class=""></div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="Modal_descarga" tabindex="-1" aria-labelledby="Modal_descarga" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="Modal_descarga">Descarga datos básicos [70MB]</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          El siguiente archivo cuenta con las siguientes capas:<br>
+          <br>* Estados
+          <br>* Municipios
+          <br>* Cuencas
+          <br>* Ríos
+          <br>* Áreas Naturales Protegidas
+          <br>
+          <br>Proyección: México ITRF08/CCL 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal"><a href="https://cdn.glitch.me/99f39383-3f0f-49d2-8394-58ec2bcd4616/Kit_Inicio.zip?v=1721262577243">Descargar</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+    // Cargar datos JSON en memoria
+    const jsonFiles = ['static/Inegi_Directory_V2.json', 'static/enciclovida_directory.json', 'static/conabio_directory.json'];
+    let data = [];
+
+    function fetchData() {
+        const promises = jsonFiles.map(file => fetch(file).then(response => response.json()));
+        Promise.all(promises).then(results => {
+            results.forEach(result => {
+                data = data.concat(result);
+            });
+        }).catch(error => console.error('Error fetching JSON files:', error));
+    }
+
+    // Ejecutar la función para cargar los datos
+    fetchData();
+
+    // Función de búsqueda
+    function searchInItem(item, keyword) {
+        if (item.category.toLowerCase().includes(keyword)) {
+            return true;
+        }
+        return item.subcategories.some(subcat => searchInItem(subcat, keyword));
+    }
+
+    document.getElementById('keyword').addEventListener('input', function(event) {
+        const keyword = event.target.value.toLowerCase();
+        const results = [];
+        
+        if (keyword.length > 2) {  // Espera a que el usuario escriba al menos 3 caracteres
+            data.forEach(item => {
+                if (searchInItem(item, keyword)) {
+                    results.push(item);
+                }
+            });
+            
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+            
+            results.forEach(file => {
+                const div = document.createElement('div');
+                div.className = 'card mt-1';
+                const subcategoriesText = file.subcategories.length > 0 ? file.subcategories.map(sub => sub.category).join(', ') : '';
+                div.innerHTML = `
+                    <div class="card-body">
+                        <h5 class="card-title">${file.category}</h5>
+                        <a href="${file.link}" target="_blank" class="btn btn-primary">Abrir</a>
+                        ${subcategoriesText ? `<p class="card-text">${subcategoriesText}</p>` : ''}
+                        <p class="card-text"><small class="text-muted fuente">Source: ${file.source}</small></p>
+                    </div>
+                `;
+                resultsDiv.appendChild(div);
+            });
+        } else {
+            document.getElementById('results').innerHTML = '';  // Limpia los resultados si la entrada es menor a 3 caracteres
+        }
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

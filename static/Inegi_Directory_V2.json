@@ -1,0 +1,272 @@
+[
+    {
+        "category": "Red Geodésica Nacional Pasiva Integrada",
+        "link": "https://www.inegi.org.mx/temas/rgnp_integrada/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Información Topográfica. Escala 1:50 000",
+        "link": "https://www.inegi.org.mx/programas/topografia/50000/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Índice de Vegetación de Diferencia Normalizada (NDVI)",
+        "link": "https://www.inegi.org.mx/investigacion/NDVI/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Índice de Clasificaciones de Agua Superficial desde el Espacio (ICASE) Landsat",
+        "link": "https://www.inegi.org.mx/investigacion/icase/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Geomediana Landsat",
+        "link": "https://www.inegi.org.mx/investigacion/geomediana/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Distribución de la Propiedad Catastral",
+        "link": "https://www.inegi.org.mx/temas/catastro/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Imágenes de Alta Resolución",
+        "link": "https://www.inegi.org.mx/temas/imagenes/imgAR/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "LANDSAT",
+        "link": "https://www.inegi.org.mx/temas/imagenes/imgLANDSAT/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "RAPIDEYE",
+        "link": "https://www.inegi.org.mx/temas/imagenes/imgRAPIDEYE/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Fotografía Aérea",
+        "link": "https://www.inegi.org.mx/temas/imagenes/fotoaerea/areahistorica/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Espaciomapas",
+        "link": "https://www.inegi.org.mx/temas/imagenes/espaciomapa/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Ortoimágenes",
+        "link": "https://www.inegi.org.mx/temas/imagenes/ortoimagenes/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Topografía (Cartas 1:1M 1:250k 1:50K 1:20K)",
+        "link": "https://www.inegi.org.mx/temas/topografia/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Relieve Continental",
+        "link": "https://www.inegi.org.mx/temas/relieve/continental/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Relieve Submarino",
+        "link": "https://www.inegi.org.mx/temas/relieve/submarino/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Territorio Insular",
+        "link": "https://www.inegi.org.mx/temas/territorioinsular/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Vías de Comunicación",
+        "link": "https://www.inegi.org.mx/temas/viascomunicacion/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Hidrografía",
+        "link": "https://www.inegi.org.mx/temas/hidrografia/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Climatología",
+        "link": "https://www.inegi.org.mx/temas/climatologia/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Edafología",
+        "link": "https://www.inegi.org.mx/temas/edafologia/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Fisiografía",
+        "link": "https://www.inegi.org.mx/temas/fisiografia/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Geología",
+        "link": "https://www.inegi.org.mx/temas/geologia/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Hidrología",
+        "link": "https://www.inegi.org.mx/temas/hidrologia/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Humedales Potenciales",
+        "link": "https://www.inegi.org.mx/temas/humedales/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Uso de Suelo y Vegetación",
+        "link": "https://www.inegi.org.mx/temas/usosuelo/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Uso Potencial de Suelo",
+        "link": "https://www.inegi.org.mx/temas/usopsuelo/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Integrada",
+        "link": "https://www.inegi.org.mx/temas/rgnp_integrada/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Gravimétrica",
+        "link": "https://www.inegi.org.mx/temas/rgnp_gravimetrica/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Vertical",
+        "link": "https://www.inegi.org.mx/temas/rgnp_vertical/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Horizontal",
+        "link": "https://www.inegi.org.mx/temas/rgnp_horizontal/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Red Geodésica Nacional Activa",
+        "link": "https://www.inegi.org.mx/temas/geodesia_activa/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Geoide Gravimétrico Mexicano",
+        "link": "https://www.inegi.org.mx/temas/geoide/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Subsidencia detectada con técnicas satelitales",
+        "link": "https://www.inegi.org.mx/temas/subsidencia/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Procesamiento GNSS",
+        "link": "https://www.inegi.org.mx/temas/gnss/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Marco Geoestadístico - Diciembre 2023",
+        "link": "https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=794551067314",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Marco Geoestadístico",
+        "link": "https://www.inegi.org.mx/temas/mg/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Agua",
+        "link": "https://www.inegi.org.mx/temas/agua/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Suelo",
+        "link": "https://www.inegi.org.mx/temas/suelo/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Bosques",
+        "link": "https://www.inegi.org.mx/temas/bosques/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Forestal",
+        "link": "https://www.inegi.org.mx/temas/forestal/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Residuos sólidos",
+        "link": "https://www.inegi.org.mx/temas/residuos/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Cuestiones ambientales específicas de los asentamientos urbanos",
+        "link": "https://www.inegi.org.mx/temas/cuestionesamb/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Prácticas ambientales",
+        "link": "https://www.inegi.org.mx/temas/practicas/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Gasto público de Protección al Medio ambiente y Gestión de recursos",
+        "link": "https://www.inegi.org.mx/temas/gastopub/",
+        "source": "INEGI",
+        "subcategories": []
+    },
+    {
+        "category": "Regulación ambiental",
+        "link": "https://www.inegi.org.mx/temas/regulacionamb/",
+        "source": "INEGI",
+        "subcategories": []
+    }
+]

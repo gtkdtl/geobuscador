@@ -1,0 +1,204 @@
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #338292;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    width: 2em;
+    background-color: #05004b6e;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #2d4f77;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #62A34B;
+  }
+
+
+body {
+    background: url('/static/icons/cruz.png');
+    background-size: 5em 5em; /* Define el tamaño del patrón */
+    background-color: rgb(0, 41, 51);
+}
+
+.encabezado {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+
+
+.navbar-nav {
+    text-align: center;
+    width: auto;
+    border-radius: 1.5em;
+    padding: 0em 1em 0em 1em;
+    background-color: rgb(255, 192, 192,0);
+}
+
+.nav-link {
+    border-radius: 2em;
+    margin: 0em 0.5em 0em 0.5em;
+    border: 2px solid black;
+}
+
+.nav-link:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+#searchForm {
+    background-color: rgb(43, 165, 173);
+    border-radius: 1em 1em 0em 0em;
+    padding: 1.5em 1em 0.5em 1em;
+    color: white;
+    border: 1px solid ;
+    border-bottom:none;
+
+    backdrop-filter: blur(2px) saturate(100%);
+    -webkit-backdrop-filter: blur(2px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0);
+    
+}
+
+#keyword {
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.692);
+    opacity: 1;
+}
+
+.card {
+    
+    border-radius: 1em 1em 1em 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: white;
+    border: 1px solid ;
+
+    backdrop-filter: blur(2px) saturate(45%);
+    -webkit-backdrop-filter: blur(2px) saturate(55%);
+    background-color: rgba(17, 25, 40, 0);
+    
+}
+
+.card:hover {
+    background-color: #063100;
+    box-shadow:
+  0.2px 0.2px 1.2px rgba(0, 0, 0, 0.064),
+  0.2px 0.2px 2.7px rgba(0, 0, 0, 0.069),
+  -0.1px -0.1px 4.6px rgba(0, 0, 0, 0.071),
+  -0.5px -0.5px 6.9px rgba(0, 0, 0, 0.072),
+  -0.9px -0.9px 10px rgba(0, 0, 0, 0.072),
+  -0.8px -0.8px 14.2px rgba(0, 0, 0, 0.071),
+  0.2px 0.2px 20.1px rgba(0, 0, 0, 0.071),
+  3.7px 3.7px 29.2px rgba(0, 0, 0, 0.071),
+  14.5px 14.5px 45px rgba(0, 0, 0, 0.07),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+
+  backdrop-filter: blur(2px) saturate(0%);
+    -webkit-backdrop-filter: blur(2px) saturate(0%);
+    background-color: rgba(0, 8, 22, 0.589);
+
+}
+
+.fuente {
+    color: rgba(253, 253, 253, 0.788) !important;
+}
+
+.btn {
+    border-radius: 1em;
+}
+
+.card-body {
+    border-radius: 1em;
+    margin: 0px;
+}
+
+#results {
+    border-radius: 0em 0em 1em 1em;
+    max-height: 70vh;
+    overflow-y: auto;
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    background-color: rgb(43, 165, 173);
+    padding: 1em;  /* Añadir padding para evitar que el contenido toque los bordes */
+    box-sizing: border-box;  /* Asegurar que el padding no aumente el tamaño del contenedor */
+    border: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    
+    
+
+    backdrop-filter: blur(2px) saturate(100%);
+    -webkit-backdrop-filter: blur(2px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0);
+}
+
+.portadas-renglon {
+    background-color: rgba(255, 0, 0, 0);
+    text-align: center;
+    
+}
+
+.portada {
+    width: 80%;
+    border-radius: 1em;
+    margin:0.5em 0em 0.5em 0em;
+}
+
+.btn-dataset {
+    border: 2px solid black;
+    border-radius: 1em; 
+    margin-bottom: 0.2em;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 95%;
+}
+
+.btn-dataset:hover {
+    background-color: #82bcffad;
+}
+
+.dropdown-menu {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    backdrop-filter: blur(10px) saturate(0%);
+    -webkit-backdrop-filter: blur(0px) saturate(0%);
+    background-color: rgba(17, 25, 40, 0);
+}
+
+.texto-acercade{
+    text-align: justify;
+}
+
+
+/* Media query para pantallas menores a 992px */
+@media (max-width: 991.98px) {
+    #results {
+        max-height: 70vh;  /* Ajustar a 100vh en pantallas pequeñas */
+    }
+    .nav-link {
+        margin-top: 0.5em;
+
+    }
+}
+

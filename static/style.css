@@ -29,7 +29,7 @@
 
 
 body {
-    background: url('../static/icons/cruz.png');
+    background: url('https://cdn.glitch.global/99f39383-3f0f-49d2-8394-58ec2bcd4616/cruz.png?v=1721270273188');
     background-size: 5em 5em; /* Define el tamaño del patrón */
     background-color: rgb(0, 41, 51);
 }

@@ -65,15 +65,21 @@
                         <li><button class="btn-dataset" type="button" data-toggle-target="#datasets" aria-expanded="false" aria-controls="#datasets">
                             Datasets
                         </button></li>
+
+                        <li><button class="btn-dataset" type="button" data-toggle-target="#docs" aria-expanded="false" aria-controls="#docs">
+                            Documentación
+                        </button></li>
                     </ul>
                 </div>
             </p>
         </div>
-            
+    </div>   
+    
+    <div class="row">
         <div class="col-12">    
 
-            <div id="Geoportales" class="collapse-content d-none">
-                <div class="card card-body">
+            <div id="Geoportales" class="collapse-content d-none scroll-portadas">
+                <div class="card card-body card-datasets">
                     <div class="row portadas-renglon">
                         <div class="col-lg-3">
                             <a target="_blank" href="http://www.conabio.gob.mx/informacion/gis/"><img src="static/portadas/Geo_conabio.png" class="img-fluid portada" alt="Geoportales"></a>
@@ -88,6 +94,12 @@
                             <a target="_blank" href="https://gisviewer.semarnat.gob.mx/geointegrador2Beta/index.html"><img src="static/portadas/Geo_SEMARNAT.png" class="img-fluid portada" alt="Geoportales"></a>
                         </div>
                         <div class="col-lg-3">
+                            <a target="_blank" href="https://e.economia.gob.mx/servicios/cartominmex/"><img src="static/portadas/v2/Geo_CartoMinMex.png" class="img-fluid portada" alt="Geoportales"></a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a target="_blank" href="https://sig.cdmx.gob.mx/sig_cdmx/"><img src="static/portadas/v2/Geo_SIGcdmx.png" class="img-fluid portada" alt="Geoportales"></a>
+                        </div>
+                        <div class="col-lg-3">
                             <a target="_blank" href="https://www.sciencebase.gov/catalog/"><img src="static/portadas/Geo_ScienceBase.png" class="img-fluid portada" alt="Geoportales"></a>
                         </div>
 
@@ -95,8 +107,8 @@
                 </div>
             </div>
 
-            <div id="Satelitales" class="collapse-content d-none">
-                <div class="card card-body">
+            <div id="Satelitales" class="collapse-content d-none scroll-portadas">
+                <div class="card card-body card-datasets">
                     <div class="row portadas-renglon">
                         <div class="col-lg-3">
                             <a target="_blank" href="https://browser.dataspace.copernicus.eu/"> <img src="static/portadas/Satelite_CopernicusBrowser.png" class="img-fluid portada" alt="Satelitales"></a>
@@ -117,8 +129,8 @@
                 </div>
             </div>
 
-            <div id="DEMs" class="collapse-content d-none">
-                <div class="card card-body">
+            <div id="DEMs" class="collapse-content d-none scroll-portadas">
+                <div class="card card-body card-datasets">
                     <div class="row portadas-renglon">
 
                         <div class="col-lg-3">
@@ -132,32 +144,63 @@
                 </div>
             </div>
 
-            <div id="datasets" class="collapse-content d-none">
-                <div class="card card-body">
+            <div id="datasets" class="collapse-content d-none scroll-portadas">
+                <div class="card card-body card-datasets">
                     <div class="row portadas-renglon">
+                        <div class="col-lg-3">
+                            <a target="_blank" href="http://www2.ssn.unam.mx:8080/catalogo/"><img src="static/portadas/v2/Dataset_SSN.png" class="img-fluid portada" alt="datasets"></a>
+                        </div>
+                        
                         <div class="col-lg-3">
                             <a target="_blank" href="https://datos.gob.mx/"><img src="static/portadas/Dataset_MX.png" class="img-fluid portada" alt="datasets"></a>
                         </div>
                         <div class="col-lg-3">
                             <a target="_blank" href="https://datos.cdmx.gob.mx/"><img src="static/portadas/Dataset_CDMX.png" class="img-fluid portada" alt="datasets"></a>
                         </div>
+
+                        <div class="col-lg-3">
+                            <a target="_blank" href="https://enciclovida.mx/avanzada"><img src="static/portadas/v2/Dataset_Enciclovida.png" class="img-fluid portada" alt="datasets"></a>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <a target="_blank" href="https://www.naturalearthdata.com/"><img src="static/portadas/v2/Dataset_NaturalEarth.png" class="img-fluid portada" alt="datasets"></a>
+                        </div>
+
                         <div class="col-lg-3">
                             <a target="_blank" href="https://monitor-apoyos.cnf.gob.mx/incendios_tarjeta_semanal"><img src="static/portadas/Dataset_incendiosMX.png" class="img-fluid portada" alt="datasets"></a>
                         </div>
                         <div class="col-lg-3">
                             <a target="_blank" href="https://firms.modaps.eosdis.nasa.gov/"><img src="static/portadas/Dataset_incendiosWRLD.png" class="img-fluid portada" alt="datasets"></a>
                         </div>
-
+                        <div class="col-lg-3">
+                            <a target="_blank" href="https://www.worldclim.org/data/worldclim21.html"><img src="static/portadas/v2/Dataset_WorldClim.png" class="img-fluid portada" alt="datasets"></a>
+                        </div>
                         
                     </div>
                 </div>
             </div>
 
-            
+            <div id="docs" class="collapse-content d-none scroll-portadas">
+                <div class="card card-body card-datasets">
+                    <div class="row portadas-renglon">
+
+                        <div class="col-lg-3">
+                            <a target="_blank" href="http://www.ordenjuridico.gob.mx/leyes.php#gsc.tab=0"><img src="static/portadas/v2/docs_Leyes.png" class="img-fluid portada" alt="docs"></a>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <a target="_blank" href="https://www.inegi.org.mx/app/publicaciones/default.html?t=186"><img src="static/portadas/v2/docs_PubInegi.png" class="img-fluid portada" alt="docs"></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
 
             
         </div>
     </div>
+
 </div>
 
 <!-- Modal -->
